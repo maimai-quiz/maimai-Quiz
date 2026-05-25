@@ -5,29 +5,72 @@
   <title>maimai Quiz</title>
 </head>
 
-<body>
+<body><body style="background:black; color:white; text-align:center; font-family:sans-serif;">
 
-<h1>maimai 開幕音クイズ</h1>
+<h1 style="font-size:48px;">
+maimai 開幕音クイズ
+</h1>
 
-<button onclick="document.getElementById('q1').play()">
-曲を再生
+<p style="font-size:24px;">
+この曲は次のうちどれでしょう？
+</p>
+
+<button 
+onclick="document.getElementById('q1').play()"
+style="
+font-size:32px;
+padding:20px 40px;
+margin:20px;
+border-radius:15px;
+background:orange;
+border:none;
+">
+▶ 再生
 </button>
+
+<br><br>
 
 <video id="q1" src="Q1.mov" style="display:none;"></video>
 
-<p>この曲は次のうちどれでしょう？</p>
-
-<button onclick="alert('正解！')">
+<button 
+onclick="alert('正解！')"
+style="
+display:block;
+margin:20px auto;
+font-size:28px;
+padding:15px 30px;
+width:400px;
+border-radius:10px;
+">
 Qzkago Requiem
 </button>
 
-<button onclick="alert('残念！')">
+<button 
+onclick="alert('残念！')"
+style="
+display:block;
+margin:20px auto;
+font-size:28px;
+padding:15px 30px;
+width:400px;
+border-radius:10px;
+">
 Oshama Scramble!
 </button>
 
-<button onclick="alert('残念！')">
+<button 
+onclick="alert('残念！')"
+style="
+display:block;
+margin:20px auto;
+font-size:28px;
+padding:15px 30px;
+width:400px;
+border-radius:10px;
+">
 Brain Power
 </button>
-  
+
 </body>
+
 </html>
