@@ -43,6 +43,10 @@ cursor:pointer;
 
 <button 
 onclick="alert('正解！')"
+onclick="
+document.getElementById('J1').style.display='block';
+document.getElementById('A1').play();
+"
 style="
 display:block;
 margin:20px auto;
@@ -89,4 +93,18 @@ box-shadow:0 4px 10px rgba(0,0,0,0.2);
 Brain Power
 </button>
 
+<img 
+id="J1"
+src="J1.jpg"
+style="
+width:300px;
+border-radius:30px;
+margin-top:30px;
+display:none;
+box-shadow:0 6px 20px rgba(0,0,0,0.3);
+"
+>
+
+<audio id="A1" src="A1.mp3"></audio>
+  
 </body>
